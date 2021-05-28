@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 168, 255, 0.3),rgba(0,168,255,0.3)),url(./yoga.jpg);
+    background-repeat: no-repeat;   
+    background-size: 100% 100%;
+    clip-path: polygon(100% 0%, 100% 77%, 50% 100% ,  0 75% , 0 0);
+    position: relative;
+}
+
+.header::before{
+    content: "";
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+    opacity: .4;
+    z-index: -1;
+    background: linear-gradient(to right, #5de4fc 0%, #3ccdbb 0%, #16c9f6 100% );
+}
+.navbar::before{
+    content: "";
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+    opacity: .4;
+    z-index: -1;
+    background: linear-gradient(to right, #1e5799 0%, #3ccdbb 0%, #16c9f6 100% );
+}
+.nav-item a{
+    font-weight: bold;
+    color: #fff !important;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+.header-section{
+    width: 100%;
+    height: inherit;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+.center-div{
+width: 100%;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+-ms-transform:translate(-50%,-50%);
+-moz-transform: translate(-50%,-50%);
+}
+
+p{
+    font-size: 1.6rem;
+    line-height: 1.6;
+font-weight: 400;
+color: #dd2525;
+}
+
+.header-buttons a{
+ border: 3px solid white;
+ border-radius: 100px;
+ color: white;
+ margin: 0 5px;
+ outline: none;
+ padding: 12px 35px;
+ font-size: 1rem;
+ font-weight: 4=700;
+ line-height: 1.4;
+ text-align: center;
+}
+
+.header-buttons a:hover{
+color: #000;
+background-color: white;
+text-decoration: none;
+transition: all .3s;
+font-weight: 700;
+box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0);
+}
+
+.center-div p {
+    font-size: 1.3rem;
+    padding: 10px 0 20px 0;
+    color: white;
+}
